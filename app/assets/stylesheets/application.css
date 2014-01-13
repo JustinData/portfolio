@@ -11,3 +11,47 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background-color: #086FA1;
+	margin: 0;
+}
+
+nav{
+	text-align: center;
+	/*border: 1px solid;*/
+	width: 100%;
+	height: 20px;
+	background-color: #034769;
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline;
+	margin: 3px;
+}
+
+#screenshot{
+	z-index: -1;
+	background-image:url('ss5.jpg');
+	background-attachment: fixed;
+	background-size: 100%;
+	height: 400px;
+}
+
+#sticky{
+	position:absolute;
+    margin:0 auto;
+    top:400px;
+}
+
+#content-container{
+	height: 1080px;
+	top: 420px;
+	position: absolute;
+}
