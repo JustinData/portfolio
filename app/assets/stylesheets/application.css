@@ -38,7 +38,7 @@ nav ul li{
 
 #screenshot{
 	z-index: -1;
-	background-image:url('ss5.jpg');
+	background-image:url('http://farm8.staticflickr.com/7350/11938772615_b257f6abbf_b.jpg');
 	background-attachment: fixed;
 	background-size: 100%;
 	height: 400px;
@@ -59,7 +59,7 @@ nav ul li{
 	z-index: -1;
 	top: 430px;
 	/*background-color: white;*/
-	background-image:url('bw4.jpg');
+	background-image:url('http://farm8.staticflickr.com/7446/11939619836_23d72fdcb4_b.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
