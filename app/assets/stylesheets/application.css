@@ -1,16 +1,4 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the top of the
- * compiled file, but it's generally better to create a new file per style scope.
- *
- *= require_self
- *= require_tree .
- */
+
 
 body {
 	background-color: black;
@@ -23,6 +11,7 @@ nav{
 	width: 100%;
 	height: 30px;
 	background-color: #1E6D74;
+	font-size: 1.5em;
 }
 
 nav ul{
@@ -54,22 +43,34 @@ nav ul li{
 
 #photo{
 	position: absolute;l
-	height: 1200px;
+	/*height: 1200px;*/
 	width: 100%;
 	z-index: -1;
 	top: 430px;
 	/*background-color: white;*/
-	background-image:url('http://farm8.staticflickr.com/7446/11939619836_ca5b984196_o.jpg');
+	/*background-image:url('http://farm3.staticflickr.com/2857/11958422345_dac40c7ff0_o.jpg');  /* 'http://farm8.staticflickr.com/7446/11939619836_ca5b984196_o.jpg'); */*/
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+#photo img{
+	width: 100%;
 }
 
 #content-container{
 	height: 1080px;
 	width: 100%;
-	top: 900px;
+	top: 600px;
 	position: absolute;
 	z-index: 20;
 	background-color: #028E9B;
 	/*visibility: hidden;*/
 }
+
+a:link {text-decoration:none;}
+a:visited {
+	text-decoration:none;
+	color: black;
+}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}
