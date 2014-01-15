@@ -1,3 +1,17 @@
+
+
+function setLinks(){
+    var about = $('#about').html().toLowerCase();
+    $('#about').mousedown(function() {
+    	$.ajax({
+    		url: "/json/#" + about,
+    		type: "GET",
+    		success: console.log()
+    	});
+    });
+}
+
+
 $( document ).ready(function() {
 	$(window).bind('scroll',function(e) {
 		var vertPosition = $(window).scrollTop(); 
@@ -34,6 +48,9 @@ $( document ).ready(function() {
         }
 
         $(window).stellar();
+        
+
+        
 
         // var s1 = 50;
         // var s2 = 100;
@@ -43,4 +60,5 @@ $( document ).ready(function() {
 
         // $('#photo').css("background-position", ("1px " + s2 / $(window).height() * pageY -1) + "px");
 	});
+    setLinks();
 });

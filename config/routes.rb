@@ -4,5 +4,9 @@ Portfolio::Application.routes.draw do
 
 	resource :welcome, only: [:index]
 
+	namespace :json, constraints: { format: 'json' } do
 
+		resources :sections 
+		
+	end
 end
