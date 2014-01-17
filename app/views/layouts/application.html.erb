@@ -6,11 +6,27 @@
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   
-  <link href='http://fonts.googleapis.com/css?family=Monda|Alegreya+Sans' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 </head>
 <body>
+	<header>
+		<div id="name">
+			<%= render "layouts/name" %>
+		</div>
 
-<%= yield %>
+		<nav>
+			<ul id="navlist">
+				<li id="about">About</li>
+				<li>Projects</li>
+				<li>Experience</li>
+				<li>Contact</li>
+			</ul>
+		</nav>
+	</header>
+
+<section id="content-container" >
+	<%= yield %>
+</section>
 
 </body>
 </html>
