@@ -1,11 +1,19 @@
 body {
 	background-color: black;
+	background-image: url(/assets/body_bg.gif);
+	background-repeat: repeat-y;
 	margin: 0;
 	/*color: #1e1f25;*/
 	color:white;
 	font-family: 'Monoco', courier;
 	/*font-family: 'Ubuntu Mono', sans-serif;*/
-	font-size: 12;
+	font-size: 14px;
+}
+
+div#name{
+	margin: 0px auto;
+	display: block;
+	text-align: center;
 }
 
 nav{
@@ -15,6 +23,7 @@ nav{
 	height: 30px;
 	/*background-color: white;*/
 	font-size: 1em;
+	margin: 30px auto;
 }
 
 nav ul{
@@ -28,16 +37,89 @@ nav ul li{
 	margin: 3px;
 }
 
+ul.resources{
+	margin:0;
+	padding:0;
+	height:40px;
+}
+
+ul.resources li{
+	list-style-type: none;
+	margin:0 10px 0 0;
+	float:left;
+}
+
+a:before{
+	content: "[";
+}
+
+a:after{
+	content: "]";
+}
+
 
 #content-container{
-	width: 100%;
-	position: absolute;
+	width: 80%;
+	margin: 20px auto;
+	max-width: 960px;
 }
 
-a:link {text-decoration:none;}
+a:link {
+	text-decoration:none;
+	color: white;
+}
 a:visited {
 	text-decoration:none;
-	color: black;
+	color: white;
 }
-a:hover {text-decoration:underline;}
+a:hover {color: #37e6e8;}
 a:active {text-decoration:underline;}
+
+h1{
+	color: #f54135;
+	font-size: 2em;
+}
+
+h1.page-title{
+	text-align: center;
+}
+
+h2{
+	color:#37e6e8;
+}
+
+h2.contact{
+	margin-bottom: 0;
+}
+
+h3{
+	color:#fdea61;
+}
+
+h4
+{
+	color:#99e343;
+}
+
+footer{
+	width: 80%;
+	margin: 30px auto;
+	text-align: center;
+	clear:both;
+	padding-top: 50px;
+}
+
+footer #copyright{
+	font-size: .8em;
+	display: inline;
+}
+
+article.project{
+	margin-bottom: 40px
+}
+
+article.contact-info{
+	width:33%;
+	float:left;
+	height: 100px;
+}

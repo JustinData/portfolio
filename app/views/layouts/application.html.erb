@@ -16,10 +16,10 @@
 
 		<nav>
 			<ul id="navlist">
-				<li id="about">About</li>
-				<li>Projects</li>
-				<li>Experience</li>
-				<li>Contact</li>
+				<li id="about"><%= link_to("About", root_path) %></li>
+				<li><%= link_to("Projects", projects_path) %></li>
+				<li><%= link_to("Experience", experiences_path) %></li>
+				<li><%= link_to("Contact", contacts_path) %></li>
 			</ul>
 		</nav>
 	</header>
@@ -27,6 +27,10 @@
 <section id="content-container" >
 	<%= yield %>
 </section>
+
+<footer>
+	<p id="copyright">&copy; 2014 Justin Kemmerer.</p>
+</footer>
 
 </body>
 </html>
